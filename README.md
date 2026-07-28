@@ -38,10 +38,10 @@
 
 <div align="center">
 <a href="https://davidburgos.dev">
-  <img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logo=vercel&logoColor=22D3EE&labelColor=0A101F" alt="Portfolio" />
+  <img src="https://img.shields.io/badge/Portfolio-0B0D12?style=for-the-badge&logo=vercel&logoColor=22D3EE&labelColor=0B0D12" alt="Portfolio" />
 </a>
 &nbsp;&nbsp;
 <a href="mailto:burgosdavid057@gmail.com">
-  <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
+  <img src="https://img.shields.io/badge/Email-0B0D12?style=for-the-badge&logo=gmail&logoColor=5468FF&labelColor=0B0D12" alt="Email" />
 </a>
 </div>
