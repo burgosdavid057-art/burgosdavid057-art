@@ -20,10 +20,6 @@
 </div>
 
 <div align="center">
-<a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-&nbsp;&nbsp;
 <a href="https://davidburgos.dev">
   <img src="https://img.shields.io/badge/Portfolio-0A101F?style=for-the-badge&logo=vercel&logoColor=22D3EE&labelColor=0A101F" alt="Portfolio" />
 </a>

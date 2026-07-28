@@ -249,10 +249,12 @@ def panel(p: dict, col: dict) -> str:
         None,
         ("Grid.Mail", p["mail"]),
         ("Grid.Portfolio", p["portfolio"]),
-        ("Grid.LinkedIn", p["linkedin"]),
+        ("Grid.LinkedIn", p.get("linkedin", "")),
         ("Grid.GitHub", p["username"]),
-        ("Grid.Facebook", p["facebook"]),
+        ("Grid.Facebook", p.get("facebook", "")),
     ]
+    # un valor vacío quita la fila entera, en vez de dejar el guion colgando
+    rows = [r for r in rows if r is None or r[1]]
 
     out = [_text(C.PANEL_X, 108, "SYSTEM.INFO", 13, col["chrome"], weight="700")]
 

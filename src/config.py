@@ -5,7 +5,7 @@ PROFILE = {
     "username": "burgosdavid057-art",
     "role": "AI Developer",
     "origin": "Medellin, Colombia",
-    "education": "TODO",          # <-- confirmar
+    "education": "Ing. de Sistemas",
     "status": "Building + Learning + Shipping",
     "toolchain": "VS Code, Git, XAMPP, n8n",
     "lang": "PHP, Python, JavaScript, Dart",
@@ -15,8 +15,8 @@ PROFILE = {
     "infra": "Plesk, Vercel, Docker",
     "mail": "burgosdavid057@gmail.com",
     "portfolio": "davidburgos.dev",
-    "linkedin": "TODO",           # <-- confirmar
-    "facebook": "TODO",           # <-- confirmar
+    # Una fila vacía no se dibuja: mejor omitirla que publicar un hueco.
+    "linkedin": "",
 }
 
 # Colores sacados de los PNG de marca de David, no inventados:
