@@ -18,9 +18,14 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # color_snake LLEVA #. Sin él la accion escribe `--cs:22D3EE` en el CSS,
+          # que es un color invalido, y la serpiente se queda sin pintar.
+          # El primer color de color_dots es la celda vacia: en oscuro tiene que
+          # ser un slate visible, porque contra el #0d1117 de GitHub un tono casi
+          # negro desaparece y la cuadricula se ve rota.
           outputs: |
-            dist/github-snake.svg?palette=github-light&color_snake=0891B2&color_dots=#ebedf0,#a5b4fc,#818cf8,#6366f1,#0891B2
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=10B981&color_dots=#2d3343,#4b5563,#7C3AED,#A78BFA,#22D3EE
+            dist/github-snake.svg?palette=github-light&color_snake=%230891B2&color_dots=#EDEFF5,#C7CDF7,#94A0F0,#5468FF,#2F3BB0
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=%2322D3EE&color_dots=#2A2F3D,#2F3BB0,#4453C9,#5468FF,#8A97FF
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
