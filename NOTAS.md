@@ -47,8 +47,33 @@ absolutos: así siguen significando lo mismo aunque cambie el número de puntos.
 5. Esperar a que la Action `Generate Snake Animation` salga en verde antes de
    confiar en las imágenes del snake: la rama `output` no existe hasta entonces.
 
+## Tarjetas de estadísticas (pendientes)
+
+No están en el README porque apuntando a `YOUR-INSTANCE` saldrían rotas. Cuando
+tengas la instancia, pega esto **dentro** del `<div align="center">` del streak,
+justo después de su `<img>`, y reemplaza `YOUR-INSTANCE`:
+
+```html
+<br/>
+<img width="49%" src="https://YOUR-INSTANCE.vercel.app/api?username=burgosdavid057-art&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=22D3EE&icon_color=5468FF&text_color=8A93A6&bg_color=0B0D12&card_width=500" alt="stats" />
+<img width="49%" src="https://YOUR-INSTANCE.vercel.app/api/top-langs/?username=burgosdavid057-art&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=8A93A6&bg_color=0B0D12&card_width=500" alt="top langs" />
+```
+
+`hide_rank=true` va a propósito: la nota con letra pesa sobre todo estrellas y
+seguidores, así que castiga a las cuentas nuevas por mucho que programen.
+
 ## Cosas que muerden
 
+- **Un `<div>` sin cerrar deja el perfil EN BLANCO.** Y engaña, porque la página
+  del repo lo auto-cierra y se ve perfecta: sólo el renderizador del README de
+  *perfil* es estricto y aborta en silencio. Costó horas de diagnosticar hacia
+  el lado equivocado. Antes de subir, cuenta las etiquetas:
+
+  ```bash
+  grep -c '<div' README.md && grep -c '</div>' README.md
+  ```
+
+  Si los dos números no coinciden, el perfil no se va a ver.
 - **La caché del CDN de GitHub.** Si cambias un SVG y no ves nada, casi nunca es
   un bug. Abre `raw.githubusercontent.com/.../dark.svg?v=999` y busca el color
   nuevo en el fuente. `Ctrl+Shift+R` limpia tu navegador, no los servidores.
