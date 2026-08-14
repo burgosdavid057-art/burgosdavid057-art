@@ -248,6 +248,7 @@ def panel(p: dict, col: dict) -> str:
         ("Core.Infra", p["infra"]),
         None,
         ("Grid.Mail", p["mail"]),
+        ("Grid.Phone", p.get("phone", "")),
         ("Grid.Portfolio", p["portfolio"]),
         ("Grid.LinkedIn", p.get("linkedin", "")),
         ("Grid.GitHub", p["username"]),

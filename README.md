@@ -17,6 +17,14 @@
 </div>
 
 <div align="center">
+<a href="https://www.linkedin.com/in/david-burgos-ab673433a/">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+&nbsp;&nbsp;
+<a href="https://wa.me/573024893987">
+  <img src="https://img.shields.io/badge/WhatsApp-0B0D12?style=for-the-badge&logo=whatsapp&logoColor=25D366&labelColor=0B0D12" alt="WhatsApp" />
+</a>
+&nbsp;&nbsp;
 <a href="https://davidburgos.dev">
   <img src="https://img.shields.io/badge/Portfolio-0B0D12?style=for-the-badge&logo=vercel&logoColor=22D3EE&labelColor=0B0D12" alt="Portfolio" />
 </a>

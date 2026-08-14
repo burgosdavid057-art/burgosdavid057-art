@@ -15,8 +15,12 @@ PROFILE = {
     "infra": "Plesk, Vercel, Docker",
     "mail": "burgosdavid057@gmail.com",
     "portfolio": "davidburgos.dev",
+    "phone": "+57 302 489 3987",
+    # La ruta real de LinkedIn, no la corta: la corta no existe y el enlace
+    # quedaría roto. Se arregla poniendo una URL personalizada en LinkedIn.
+    "linkedin": "in/david-burgos-ab673433a",
     # Una fila vacía no se dibuja: mejor omitirla que publicar un hueco.
-    "linkedin": "",
+    "facebook": "",
 }
 
 # Colores sacados de los PNG de marca de David, no inventados:
